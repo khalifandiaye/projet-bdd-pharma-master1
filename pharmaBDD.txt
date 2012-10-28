@@ -1,0 +1,37 @@
+BDD médicaments :
+
+appel de la bdd : entrer nom médicament/principe actif/nom laboratoire
+
+posologie/famille thérapeutique
+mécanisme d'action (pas toujours)
+pharmacologie
+indications thérapeutiques
+formule
+nom laboratoire
+année de AMM (autorisation mise marché)
+contre-indications
+interactions médicamenteuses
+effets indésirables
+
+BDD patients :
+
+il s'agit du dossier pharmaceutique, on y stocke que les patients qui le demandent.
+Stockage de la liste des médicaments des 4 derniers mois.
+Alertes qui permettent d'eviter les interactions médicamenteuses malencontreuses et les erreurs de traitement. 
+Vérification posologie et dosage aussi.
+
+nom patient
+prénom patient
+numéro SECU
+mutuelle
+adresse
+numéro de téléphone
+
+
+Katsiaryna.Bel@etud.univ-montp2.fr
+Houssam.Kourdache@etud.univ-montp2.fr
+Yohann.Lam-Seck@etud.univ-montp2.fr
+Romain.Monin@etud.univ-montp2.fr
+Baptiste.Train01@etud.univ-montp2.fr
+Cedric.Cambon@etud.univ-montp2.fr 
+Jean-Henri.Genot@etud.univ-montp2.fr

@@ -1,21 +1,20 @@
 #summary Ajout de contacts
 
-= Introduction =
 
 Afin de permettre à tout le monde de communiquer, je vous donne les adresses mails de chacun, ainsi que mon numéro de téléphone portable pour les réunions de dernière minute.
 
 
-= Contacts e-mails =
+=== Contacts e-mails ===
 
-KathiBel@gmail.com, 
+kathibel@gmail.com, 
 baptiste.train@gmail.com, 
 denis.redondo34@gmail.com, 
 joris.moyano@gmail.com, 
 cecambon@gmail.com, 
-Xavier.Jeudy@gmail.com,
+xavier.jeudy@gmail.com,
 jeanhenri.genot@gmail.com
 
 
-= Contacts téléphonique =
+=== Contacts téléphonique ===
 
 Jean GENOT : 0609897559

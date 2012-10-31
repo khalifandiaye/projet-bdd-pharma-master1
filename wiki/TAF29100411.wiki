@@ -23,6 +23,6 @@ Pour ce travail, vous pouvez chacun faire de votre côté le schéma UML qui vou
 
 Pour ma part, je vais continuer à étoffer le dictionnaire de données et tenter de corriger vos diagrammes UML, il est donc important que vos uploads soient réguliers!
 
-Il existe un site internet pour la modélisation UML (ça vous évite d'utiliser Paint et/ou scanner une feuille), je vous le met dès que je le retrouve (Houssam et Romain vous l'avez peut-être, c'est un site proposé par Alexandre au précédent TER).
+Il existe un site internet pour la modélisation UML (ça vous évite d'utiliser Paint et/ou scanner une feuille) : *http://yuml.me/ *
 
 Bonne chance.

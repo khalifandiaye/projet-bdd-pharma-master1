@@ -12,9 +12,11 @@ denis.redondo34@gmail.com,
 joris.moyano@gmail.com, 
 cecambon@gmail.com, 
 xavier.jeudy@gmail.com,
-jeanhenri.genot@gmail.com
+jeanhenri.genot@gmail.com,
+r2m.monin@gmail.com
 
 
 === Contacts téléphonique ===
 
-Jean GENOT : 0609897559
+  * Jean GENOT : 0609897559
+  * Romain MONIN : 0620634256

@@ -1,58 +1,58 @@
 Classe Pharmacie
 
 Nom
-Propriétaire (plutôt que nom_dir, pointera vers une classe personne)
-Numéro SIRET (identifiant de l'entreprise, pour être complet) {unique}
+PropriÃ©taire (plutÃ´t que nom_dir, pointera vers une classe personne)
+NumÃ©ro SIRET (identifiant de l'entreprise, pour Ãªtre complet) {unique}
 Adresse {unique}
 Telephone
-(on peut éventuellement rajouter le nombre d'employés, faire la différence entre
-les différents métiers dans le but de rajouter une classe sur le salaire!)
+(on peut Ã©ventuellement rajouter le nombre d'employÃ©s, faire la diffÃ©rence entre
+les diffÃ©rents mÃ©tiers dans le but de rajouter une classe sur le salaire!)
 
 
 Classe Personne
 
 Nom 
-Prénom
+PrÃ©nom
 
-Classe Client extends Personne
+Classe Client extends Personne ( quel intÃ©rÃªt de mettre une classe client en plus de patient si ce n'est que pour mettre un id ? )
 
 ID
 
 Classe Patient extends Client
 
-(pathologies?, il y a sans doute quelque chose à rajouter par rapport au client,
-après tout la pharmacie peut conserver un dossier de tout les médocs du patient!)
+(pathologies?, il y a sans doute quelque chose Ã  rajouter par rapport au client,
+aprÃ¨s tout la pharmacie peut conserver un dossier de tout les mÃ©docs du patient!)
 
-Classe Employé? extends Personne
+Classe EmployÃ©? extends Personne
 
-Classe Préparateur? extends Employé
+Classe PrÃ©parateur? extends EmployÃ©
 
-Classe Pharmacien? extends Employé
+Classe Pharmacien? extends EmployÃ©
 
-... Si vous voulez que le salaire de tel ou tel employé soit accessible depuis l'interface web!
+... Si vous voulez que le salaire de tel ou tel employÃ© soit accessible depuis l'interface web!
 
 Classe Medicament
 
 Nom
 Niveau-danger
 Contre-indications
-Effets indésirables... (lire pharmaBDD.txt, j'avais mis pas mal d'attributs, il en manque et
-seront tous demandés dans une base de données pharmaceutiques, notamment dans les contraintes!)
+Effets indÃ©sirables... (lire pharmaBDD.txt, j'avais mis pas mal d'attributs, il en manque et
+seront tous demandÃ©s dans une base de donnÃ©es pharmaceutiques, notamment dans les contraintes!)
 
 Classe Laboratoire
 
 Nom
-Numéro SIRET
+NumÃ©ro SIRET
 Adresse
-Propriétaire
-Spécialisation? ... (essayer d'être complet, une recherche sur internet vous en dira plus sur les laboratoires)
+PropriÃ©taire
+SpÃ©cialisation? ... (essayer d'Ãªtre complet, une recherche sur internet vous en dira plus sur les laboratoires)
 
 Une table SALAIRE aussi?
-Je pense que ça peut être utile, il faut aussi savoir gérer son propre effectif en plus des clients!
+Je pense que Ã§a peut Ãªtre utile, il faut aussi savoir gÃ©rer son propre effectif en plus des clients!
 
 Une table ORDONNANCE aussi?
-Pour les responsabilités, les dates de prescription etc...!
+Pour les responsabilitÃ©s, les dates de prescription etc...!
 
 
-Rien d'autre à faire dans une pharmacie? Gestion des stocks? Date de péremption... autant d'attributs et de classes
-qui manquent, essayer d'être complet.
+Rien d'autre Ã  faire dans une pharmacie? Gestion des stocks? Date de pÃ©remption... autant d'attributs et de classes
+qui manquent, essayer d'Ãªtre complet.

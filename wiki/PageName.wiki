@@ -1,0 +1,31 @@
+j'ai pensé à rajouter quelques attributs à la classe médicaments(produit) de la bdd. C'est beaucoup plus détaillé:
+
+classe médicament(produit):
+
+* le nom commercial
+* Champ de description
+* l' identification numérique de drogue (DIN)
+* le nom de l'entreprise
+* État
+* Date
+* Classe
+* les ingrédient(s) actif(s)
+* la concentration
+* la voie(s) d'administration
+* la forme(s) posologique(s)
+* Monographie de produit (MP)
+* l'Annexe
+* la classification thérapeutique (AHFS et ATC)
+* le numéro du groupe d'ingrédients actifs
+
+
+
+
+autre chose, je pense qu'il s'impose de rajouter la classe "assurance santé/mutuelle" qui sera associé à la classe personne:
+
+classe assurance/mutuelle:
+
+* nom assurance santé(lmde par ex)
+* adresse
+* taux de remboursement
+* ...etc

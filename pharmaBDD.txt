@@ -1,31 +1,31 @@
-BDD médicaments :
+BDD mÃ©dicaments :
 
-appel de la bdd : entrer nom médicament/principe actif/nom laboratoire
+appel de la bdd : entrer nom mÃ©dicament/principe actif/nom laboratoire
 
-posologie/famille thérapeutique
-mécanisme d'action (pas toujours)
+posologie/famille thÃ©rapeutique
+mÃ©canisme d'action (pas toujours)
 pharmacologie
-indications thérapeutiques
+indications thÃ©rapeutiques
 formule
 nom laboratoire
-année de AMM (autorisation mise marché)
+annÃ©e de AMM (autorisation mise marchÃ©)
 contre-indications
-interactions médicamenteuses
-effets indésirables
+interactions mÃ©dicamenteuses
+effets indÃ©sirables
 
 BDD patients :
 
-il s'agit du dossier pharmaceutique, on y stocke que les patients qui le demandent.
-Stockage de la liste des médicaments des 4 derniers mois.
-Alertes qui permettent d'eviter les interactions médicamenteuses malencontreuses et les erreurs de traitement. 
-Vérification posologie et dosage aussi.
+il s'agit du dossier pharmaceutique, on y stocke que les patients qui le demandent. ( Ã§a ressemble plus Ã  un hopital qu'Ã  une pharmacie xD )
+Stockage de la liste des mÃ©dicaments des 4 derniers mois.
+Alertes qui permettent d'eviter les interactions mÃ©dicamenteuses malencontreuses et les erreurs de traitement. 
+VÃ©rification posologie et dosage aussi.
 
 nom patient
-prénom patient
-numéro SECU
+prÃ©nom patient
+numÃ©ro SECU
 mutuelle
 adresse
-numéro de téléphone
+numÃ©ro de tÃ©lÃ©phone
 
 
 Katsiaryna.Bel@etud.univ-montp2.fr

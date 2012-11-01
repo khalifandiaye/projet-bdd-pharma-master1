@@ -1,0 +1,58 @@
+Classe Pharmacie
+
+Nom
+Propriétaire (plutôt que nom_dir, pointera vers une classe personne)
+Numéro SIRET (identifiant de l'entreprise, pour être complet) {unique}
+Adresse {unique}
+Telephone
+(on peut éventuellement rajouter le nombre d'employés, faire la différence entre
+les différents métiers dans le but de rajouter une classe sur le salaire!)
+
+
+Classe Personne
+
+Nom 
+Prénom
+
+Classe Client extends Personne
+
+ID
+
+Classe Patient extends Client
+
+(pathologies?, il y a sans doute quelque chose à rajouter par rapport au client,
+après tout la pharmacie peut conserver un dossier de tout les médocs du patient!)
+
+Classe Employé? extends Personne
+
+Classe Préparateur? extends Employé
+
+Classe Pharmacien? extends Employé
+
+... Si vous voulez que le salaire de tel ou tel employé soit accessible depuis l'interface web!
+
+Classe Medicament
+
+Nom
+Niveau-danger
+Contre-indications
+Effets indésirables... (lire pharmaBDD.txt, j'avais mis pas mal d'attributs, il en manque et
+seront tous demandés dans une base de données pharmaceutiques, notamment dans les contraintes!)
+
+Classe Laboratoire
+
+Nom
+Numéro SIRET
+Adresse
+Propriétaire
+Spécialisation? ... (essayer d'être complet, une recherche sur internet vous en dira plus sur les laboratoires)
+
+Une table SALAIRE aussi?
+Je pense que ça peut être utile, il faut aussi savoir gérer son propre effectif en plus des clients!
+
+Une table ORDONNANCE aussi?
+Pour les responsabilités, les dates de prescription etc...!
+
+
+Rien d'autre à faire dans une pharmacie? Gestion des stocks? Date de péremption... autant d'attributs et de classes
+qui manquent, essayer d'être complet.

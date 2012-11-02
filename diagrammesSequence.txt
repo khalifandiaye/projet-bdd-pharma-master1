@@ -1,0 +1,8 @@
+Alors voici plusieurs diagrammes de séquences:
+
+Représentation d'une demande de médicament: https://cacoo.com/diagrams/IgC7xRSwqVz4pRjN (pas terminé)
+Rmq: je n'ai pas représenté la vérification d'interdiction de médicament (pour les drogués par exemple), uniquement la vérification d'ordonnance si le médicament en a besoin.
+
+Représentation d'une commande de médicaments : (en cours)
+
+Autres propositions?

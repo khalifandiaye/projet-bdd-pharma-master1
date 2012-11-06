@@ -1,0 +1,72 @@
+Voici un complément et une correction de ce qu'on travaillé le mardi 06/11 
+
+On oublie Client : cette entité n'existe pas, on repart sur l'idée d'un patient.
+
+Patient
+
+NuméroCarteVitale
+Nom
+Prenom
+Adresse
+Mutuelle
+DegréRemboursement
+DateDroits
+
+Pour les médicaments : on va simplifier la classe.
+
+Medicament
+
+CodeACL (identifiant du médicament)
+ficheproduit (contient la doc du Dico VIDAL + carac principales)
+molécule (sert à faire les alertes si il existe des contre-indications avec d'autres médocs)
+... (je ne sais pas quoi rajouter d'autre)
+
+Il existe plusieurs types de médicaments :
+- En libre-service
+- Liste2 (sur ordonnance, renouvelable sans ordonnance)
+- Liste1 (sur ordonnance, renouvelable avec ordonnance)
+- Stupéfiants (sur ordonnance spéciale)
+(vous pouvez ajouter un attribut au médicament contenant cette spécificité)
+
+Concernant les ventes : 
+
+Il existe 2 types de vente :
+
+- Vente au comptoir permettant l'achat de médicaments en libre service, des cosmétiques, crèmes, préservatifs...
+Un historique des ventes est effectué deux fois par jour, et un récapitulatif est imprimé à la fin de la journée
+avec le prix total des ventes effectuée et le numéro du vendeur à la caisse.
+
+- Vente sur ordonnance : Tout les médicaments sont concernés, la vente requiert la carte vitale et la mutuelle si existante.
+Un historique sur X mois (voire X années), est conservé pour les ventes sur ordonnances. 
+L'entrée d'un numéro de carte vitale ammène vers un historique de ventes classées par date.
+
+Le dossier pharmaceutique est national(donc inter-pharmacie), il reflète la médicamentation du patient sur les 4 derniers mois.
+A chaque passage de la carte vitale, le logiciel propose au pharmacien (et donc au patient) si le patient veut créer ce dossier pharm. 
+s'il n'existe pas déjà.
+Il sert aux autres pharmacies à éviter les erreurs thérapeutiques et les fraudes.
+
+Au milieu et fin de journée , le logiciel fait des commandes automatiques selon les ventes effectuées dans la journée (remplacement des 
+stocks), elles doivent être validées par le pharmacien (ou le responsable direct, pas forcément le directeur, ça change selon les pharmacies).
+Ces commandes automatiques sont effectuées auprès de grossistes (grosses pharmacies faisant office de "banques" de médicaments, plus chères 
+que les laboratoires).
+
+De manière mensuelle ou bi-mensuelle, une commande globale est effectuée auprès des fournisseurs (laboratoires)(achat de 5000 boîtes de dolipranes
+par exemple). Généralement, des pharmacies s'associent sur les commandes pour faire des tirs groupés et profiter de réductions de la part des labos.
+
+La commande auprès des grossistes et laboratoires s'effectuent par le logiciel, en entrant le nom du grossiste ou le code du laboratoire.
+
+Laboratoire 
+
+Code
+Nom
+Adresse
+NuméroTel
+...
+
+
+Contrairement à ce que j'ai avancé cette après-midi, il faut inverser le rapport de force pharmacien/préparateur. Le pharmacien fait tout ce que fait le préparateur + les responsabilités.
+Le préparateur est un pharmacien moins bien payé et avec moins de responsabilités. Le directeur doit être un pharmacien.
+N'importe quel pharmacien peut valider les commandes de mi-journée.
+Un pharmacien responsable ou directeur est seul en charge des commandes au fournisseur.
+
+Chaque pharmacien/préparateur dispose d'un numéroVendeur pour vendre au comptoir ou par ordonnance.

@@ -1,4 +1,4 @@
-/**création du type objet thesaurus
+/**crÃ©ation du type objet thesaurus
 */
 create type thesaurus_t  as object(
 	id_thesaurus char(20),

@@ -1,0 +1,50 @@
+/**création du type objet thesaurus
+*/
+create type thesaurus_t  as object(
+	id_thesaurus char(20),
+	langue char(20),
+	date Date,
+	description char(50),	
+	publie  number,
+	contributeur char(20),
+	format char(20),
+	type char(20),
+	source char(20),
+	ref_Domaine REF  domaines
+);
+
+/**creation de la table thesaurus
+*/
+create table Thesaurus of thesaurus_t  (
+	constraint pk_thesaurus PRIMARY_KEY(id_thesaurus)
+);
+
+/**creation du type domaine
+*/
+create type Domaine_t  as object(
+	titre char(20),
+	sujet char(20),
+	ref_concepts    REF  Ens_concepts	
+);
+/**creation de la table domaines, objets de type domaines_t 
+*/
+create table Domaines of domaines_t(
+	constraint pk_domaine PRIMARY_KEY(sujet)
+);
+
+/
+create type  concept_t (
+	id_concept char(30),
+	date_creation Date,
+		
+);
+
+create type Ens_concepts as table of concept_t; 
+
+create type Descripteur_vedette_t(
+	ref_ens_descripteur_equivalent  REF Ens_descripteur_vedette
+);
+create type Descripteur_equivalent_t(
+);
+
+create   table   Ens_descripteur_vedette_t  as table of Descripteur_vedette_t;  

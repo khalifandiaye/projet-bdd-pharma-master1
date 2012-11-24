@@ -1,0 +1,134 @@
+--set linesize 30
+
+--SUPPRESSION DES DONNEES EXISTANTES
+/*
+alter table THESAURUS drop constraint thesaurus_pk;
+alter table DOMAINE drop constraint domaine_pk;
+alter table CONCEPT drop constraint concept_pk;
+alter table DESCRIPTEUR drop constraint descripteur_pk;
+
+
+alter table CONCEPT drop constraint specifique_fk;
+alter table CONCEPT drop constraint generique_fk;
+alter table CONCEPT drop constraint associatif_fk;
+--alter table DESCRIPTEUR_VEDETTE drop constraint descV_fk;
+--alter table DESCRIPTEUR_EQUIVALENT drop constraint descE_fk;
+
+
+drop table DESCRIPTEUR_EQUIVALENT
+drop table DESCRIPTEUR_VEDETTE
+drop table DESCRIPTEUR
+drop table CONCEPT
+drop table DOMAINE
+drop table THESAURUS
+*/
+
+
+--CREATION DES TABLES
+
+create table THESAURUS (
+	ID_thesaurus number,
+	Langue varchar2(20),
+	Auteur varchar2(20),
+	Date date,
+	Description varchar2(20),
+	Publie boolean,
+	Contributeur varchar2(20),
+	Format varchar2(20),
+	Type varchar2(20),
+	Source varchar2(20)
+);
+
+
+create table DOMAINE (
+	Titre varchar2(20),
+	Sujet varchar2(20)
+);
+
+
+create or replace type CONCEPT_T as object (
+	ID_concept number,
+	Date_creation date
+);
+
+
+create table CONCEPT of CONCEPT_T (
+	Specifique CONCEPT_T,
+	Generique CONCEPT_T,
+	Associatif CONCEPT_T
+);
+
+
+create table DESCRIPTEUR (
+	ID_desc number,
+	Valeur_lexicale varchar2(20),
+	Date_creation date,
+	Source varchar2(20),
+	Langue varchar2(20)
+);
+
+
+create table DESCRIPTEUR_VEDETTE under DESCRIPTEUR;
+
+
+create table DESCRIPTEUR_EQUIVALENT under DESCRIPTEUR;
+
+
+
+--CREATION DES CONTRAINTES
+
+--Cles primaires :
+/*
+alter table THESAURUS add constraint thesaurus_pk primary key (ID_thesaurus);
+
+alter table DOMAINE add constraint domaine_pk primary key (Sujet);
+
+alter table CONCEPT add constraint concept_pk primary key (ID_concept);
+
+alter table DESCRIPTEUR add constraint descripteur_pk primary key (ID_desc);
+*/
+
+
+--Cles etrangeres :
+/*
+alter table CONCEPT add constraint specifique_fk foreign key (Specifique) references (ID_concept);
+
+alter table CONCEPT add constraint generique_fk foreign key (Generique) references (ID_concept);
+
+alter table CONCEPT add constraint associatif_fk foreign key (Associatif) references (ID_concept);
+
+--alter table DESCRIPTEUR_VEDETTE add constraint descV_fk foreign key (?) references (ID_concept);
+
+--alter table DESCRIPTEUR_EQUIVALENT add constraint descE_fk foreign key (?) references (ID_desc);
+*/
+
+
+--AJOUT DES DONNEES
+/*
+insert into THESAURUS values (0, 'Langue', 'Auteur', '24-nov-12', 'Description', false, 'Contributeur', 'Format', 'Type', 'Source');
+
+insert into DOMAINE values ('Titre', 'Sujet');
+
+insert into CONCEPT values (0, '24-nov-12');
+
+insert into DESCRIPTEUR values (0, 'Valeur lexicale', '24-nov-12', 'Source', 'Langue');
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

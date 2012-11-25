@@ -1,0 +1,13 @@
+#summary TAF du 24/11 au 30/11
+
+== Travail à faire ==
+
+Voici le travail à faire pour cette semaine :
+
+ * Nous passons au modèle relationnel-objet. Il faut donc créer les types et les tables en SQL3 (comme on a vu vendredi en BDD).
+
+ * Il faut implémenter ce modèle au sein d'une architecture web (PhPMyAdmin-MySql ou autre...)
+
+Nous aurons une réunion mardi à 13h30 au bâtiment 16 pour corriger le modèle relationnel-objet et décider de l'architecture à adopter.
+
+Bonne chance.

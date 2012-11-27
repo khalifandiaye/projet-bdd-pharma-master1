@@ -1,0 +1,17 @@
+#summary TAF du 27/11 au 02/12
+
+== Travail à faire ==
+
+Voici le travail à faire pour cette semaine, séparé par groupes :
+
+ * Denis-Joris-Cedric : Implémentation du modèle relationnel objet vu à la réunion du 27/11. Installation et mise en place de la structure SQL3 sous PostGreSQL
+
+ * Houssam-Romain : Implémentation d'une interface PHP capable d'afficher le résultat des requêtes sur le serveur PostGreSQL.
+
+ * Baptiste-Yohann : Insertion de données au sein des tables existantes.
+
+ * Kathia-Jean : Création des requêtes basiques (et reflexion avancée) pour l'interface PHP.
+
+Vendredi 30 Novembre : Nous verrons Annie CHATEAU pendant le TD/TP, le TAF est à effectuer jusqu'à dimanche mais j'aimerais pouvoir lui présenter quelque chose de propre et implémenté.
+
+Bonne chance.

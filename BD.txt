@@ -1,0 +1,55 @@
+CREATE OR REPLACE TYPE Thesaurus_T AS OBJET (
+	ID_Thesaurus VARCHAR2(20),
+	Titre_Thesaurus VARCHAR2(20),
+	langue VARCHAR2(20),
+	auteur VARCHAR2(20),
+	description VARCHAR2(20),
+	publier VARCHAR2(20),
+	contributeur VARCHAR2(20),
+	format VARCHAR2(20),
+	type VARCHAR2(20),
+	source VARCHAR2(20),
+	date_Creation DATE,
+	Domaine DOMAINE_T
+)
+/
+
+
+CREATE OR REPLACE TYPE Domaine_T AS OBJET (
+	Titre VARCHAR2(20),
+	Sujet VARCHAR2(20),
+	GroupeConcept GROUPECONCEPT_T
+)
+/
+CREATE TABLE domaine OF domaine_t NESTED TABLE GroupeConcept STORE AS GroupeConcept_TAB
+/
+
+/
+CREATE OR REPLACE TYPE GroupeConcept_T AS TABLE OF Concept_t
+/
+CREATE OR REPLACE TYPE Concept_T AS OBJET (
+	ID_Concept NUMBER,
+	date_Creation DATE,
+	domaine DOMAINE,
+	Desc_vedette DESC_VEDETTE,
+	GroupeConceptAss GroupConcept_T,
+	GroupeConceptTS GroupConcept_T,
+	GroupeConceptTG GroupConcept_T
+) 
+/
+CREATE TABLE Concept OF concept_t (
+	constraint concept_pk	PRIMARY KEY (id_concept)
+)
+/
+CREATE TABLE Concept of Concept_T(
+	primary key pk ID) 
+NESTED TABLE GroupeConcept STORE AS GroupeConcept_TAB
+/
+CREATE OR REPLACE TYPE Descripteur_T AS OBJET (
+	ID_Desc NUMBER,
+	date_Creation DATE,
+	valeur_lexiq VARCHAR2(20),
+	source_desc VARCHAR2(20),
+	langue VARCHAR2(20)
+)
+/

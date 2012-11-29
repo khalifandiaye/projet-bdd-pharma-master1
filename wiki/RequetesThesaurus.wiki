@@ -8,6 +8,6 @@ Vous pouvez aussi poster des requêtes qui seront utiles à la démonstration de
 == Requêtes ==
 
 
-  * IDK
+  * *SELECT Concept FROM Domaine WHERE Concept.DescVedette LIKE 'A%'*, Faire ça avec toutes les lettres de l'alphabet (LIKE 'B%'...)
   * IDK
   * IDK

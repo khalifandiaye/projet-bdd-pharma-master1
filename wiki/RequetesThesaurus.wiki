@@ -1,0 +1,13 @@
+#summary Requêtes possibles pour l'interrogation d'une base de données construite sur le modèle d'un thésaurus.
+
+== Introduction ==
+
+Postez ici les requêtes qui vous semblent indispensable pour un accès rapide via l'interface web.
+Vous pouvez aussi poster des requêtes qui seront utiles à la démonstration devant les professeurs.
+
+== Requêtes ==
+
+
+  * IDK
+  * IDK
+  * IDK

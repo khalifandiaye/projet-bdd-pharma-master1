@@ -1,0 +1,1 @@
+Il s'agit de créer une base de données portant sur le thème de la pharmacie en y incluant une interface web pour la manipulation des données.
